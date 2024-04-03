@@ -1,0 +1,157 @@
+/* VARIAVEIS */
+:root {
+  --border: 1px solid #ffffff1a;
+  --color-background-black: #121214;
+  --color-white: #ffffff;
+  --color-topics: #e1e1e6;
+  --color-gray-200: #c4c4cc;
+  --color-check-in-button: #9ff9cc;
+  --color-submit-button: #f48f56;
+}
+
+/* ------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+table,
+input,
+button {
+  font-family: "Roboto", sans-serif;
+  line-height: 140%;
+}
+
+body {
+  background-color: var(--color-background-black);
+  color: white;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  max-width: 658px;
+  margin: 0 auto;
+}
+
+/* ------ */
+
+header {
+  padding: 20px 0;
+}
+
+form {
+  border: var(--border);
+  border-inline: none;
+  padding: 20px 0;
+}
+
+form fieldset {
+  border: none;
+  padding: 6px 0;
+}
+
+form legend,
+section .title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-topics);
+}
+
+form div {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+form input {
+  all: unset;
+}
+
+form .input-field {
+  flex: 1;
+  border: var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  align-items: center;
+}
+
+form button {
+  all: unset;
+  border: var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-background-black);
+  background-color: var(--color-submit-button);
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #f39964;
+  cursor: pointer;
+}
+
+section .title {
+  padding: 20px 0;
+}
+
+section .lista-participantes {
+  border: var(--border);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table caption {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+table thead {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+thead th,
+tbody td {
+  padding: 12px 16px;
+}
+
+tbody td {
+  border-top: var(--border);
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--color-gray-200);
+}
+
+tbody td strong {
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+tbody td small {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+tbody td button {
+  all: unset;
+  color: var(--color-check-in-button);
+  transition: color 0.3s ease;
+}
+
+tbody td button:hover {
+  color: #01cb66;
+  cursor: pointer;
+}
